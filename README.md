@@ -14,6 +14,6 @@
 
 Complétez le fichier `index.html` avec les bonnes balises afin d’arriver au résultat suivant :
 
-![Résultat attendu](./rendu.jpg)
+![Résultat attendu](./rendu.png)
 
 N’oubliez pas de lier la feuille de styles qui se trouve dans le dossier `css`.
