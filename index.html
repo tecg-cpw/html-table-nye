@@ -1,161 +1,116 @@
-<!DOCTYPE html>
-<html lang="fr">
-	<head>
-		<meta charset="UTF-8">
-		<title>
-			F*ckin NYE - Timetable
-		</title>
-		<link href='http://fonts.googleapis.com/css?family=Teko:400,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="./css/styles.css">
-	</head>
-	<body>
-		<table>
-			<caption>
-				Le timetable du nouvel an : FCKNYE-2014
-			</caption>
-			<tr>
-				<th>&nbsp;</th>
-				<th scope="col">
-					F*ckin Beat stage
-				</th>
-				<th scope="col">
-					Warehouse stage
-				</th>
-				<th scope="col">
-					Back in the Dayz x La Brique stage
-				</th>
-				<th scope="col">
-					ReggeaBus stage
-				</th>
-			</tr>
-			<tr>
-				<th id="l2130">
-					21h30
-				</th>
-				<td headers="l2130">
-					Drumderground Crew
-				</td>
-				<td rowspan="2" headers="l2130 l2200">
-					Kr!z
-				</td>
-				<td headers="l2130">
-					L'or du commun & Roméo Elvis
-				</td>
-				<td rowspan="2" headers="l2130 l2200">
-					Aba & Shant-i
-				</td>
-			</tr>
-			<tr>
-				<th id="l2200">
-					22h00
-				</th>
-				<td headers="l2200">
-					R.O.
-				</td>
-				<td headers="l2200">
-					Jean Jass
-				</td>
-			</tr>
-			<tr>
-				<th scope="row">
-					23h00
-				</th>
-				<td>
-					Station Earth
-				</td>
-				<td>
-					Jim Henderson (Live)
-				</td>
-				<td>
-					Onra
-				</td>
-				<td colspan="2">
-					OBF & Shanti D
-				</td>
-			</tr>
-			<tr>
-				<th id="l0000">
-					00h00
-				</th>
-				<td headers="l0000">
-					Teddy Killerz
-				</td>
-				<td rowspan="2" headers="l0000 l0100">
-					Robert Hood
-				</td>
-				<td headers="l0000">
-					Kaaris
-				</td>
-				<td rowspan="3" headers="l0000 l0100 l0200">
-					Stand High Patrol
-				</td>
-			</tr>
-			<tr>
-				<th id="l0100">
-					1h00
-				</th>
-				<td headers="l0100">
-					Ed Rush &amp; Optical
-				</td>
-				<td headers="l0100">
-					Dope D.O.D
-				</td>
-			</tr>
-			<tr>
-				<th id="l0200">
-					02h00
-				</th>
-				<td headers="l0200">
-					Audio
-				</td>
-				<td rowspan="2" headers="l0200 l0300">
-					Jeff Mills
-				</td>
-				<td headers="l0200">
-					La Smala
-				</td>
-			</tr>
-			<tr>
-				<th id="l0300">
-					03h00
-				</th>
-				<td headers="l0300">
-					The Hard Way (Live)
-				</td>
-				<td rowspan="2" headers="l0300 l0400">
-					Al Tarba & Dj Nixon
-				</td>
-				<td rowspan="4" headers="l0300 l0330 l0400 l0500">
-					ReggeaBus & Mad Codiouf
-				</td>
-			</tr>
-			<tr>
-				<th id="l0330">
-					03h30
-				</th>
-				<td headers="l0330">
-					Mefjus b2b Emperor
-				</td>
-				<td rowspan="3" headers="l0330 l0400 l0500">
-					The Advent (Live)
-				</td>
-			</tr>
-			<tr>
-				<th id="l0400">
-					04h00
-				</th>
-				<td rowspan="2" headers="l0400 l0500">
-					Current Value
-				</td>
-				<td rowspan="2" headers="l0400 l0500">
-					Dj Cam
-				</td>
-			</tr>
-			<tr>
-				<th id="l0500">
-					05h00
-				</th>
-			</tr>
-		</table>
-	</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="tecg-cpw" />
+    <meta name="keywords" content="table, html, concert, schedule, timetable" />
+    <meta
+      name="description"
+      content="The timetable of the 2014 edition of FCKNYE"
+    />
+    <title>F*ckin NYE - Timetable</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1>
+      New Year&rsquo;s Festival
+      <time datetime="2014">2014</time>
+    </h1>
+    <div id="table-description">
+      <p>
+        From
+        <time datetime="2013-12-31 21:30:00">21h30</time>
+        to
+        <time datetime="2014-01-01 06:00:00">06h00</time>
+        , many dj sets will happen on 4 stages
+      </p>
+    </div>
+    <table aria-describedby="table-description">
+      <caption>
+        <abbr title="F*CK New Year's Eve">FCKNYE</abbr
+        >-
+        <time datetime="2014">2014</time>
+        timetable
+      </caption>
+      <tr>
+        <td aria-hidden="true">&nbsp;</td>
+        <th id="fbs">F*ckin Beat stage</th>
+        <th id="ws">Warehouse stage</th>
+        <th id="bitds">Back in the Dayz x La Brique stage</th>
+        <th id="rs">ReggeaBus stage</th>
+      </tr>
+      <tr>
+        <th id="l2130">21h30</th>
+        <td headers="l2130 fbs">Drumderground Crew</td>
+        <td rowspan="2" headers="l2130 l2200 ws">Kr!z</td>
+        <td headers="l2130 bitds">L'or du commun & Roméo Elvis</td>
+        <td rowspan="2" headers="l2130 l2200 rs">Aba & Shant-i</td>
+      </tr>
+      <tr>
+        <th id="l2200">22h00</th>
+        <td headers="l2200 fbs">R.O.</td>
+        <!-- td -->
+        <td headers="l2200 bitds">Jean Jass</td>
+        <!-- td -->
+      </tr>
+      <tr>
+        <th id="l2300">23h00</th>
+        <td headers="l2300 fbs">Station Earth</td>
+        <td headers="l2300 ws">Jim Henderson (Live)</td>
+        <td headers="l2300 bitds">Onra</td>
+        <td headers="l2300 rs">OBF &amp; Shanti D</td>
+      </tr>
+      <tr>
+        <th id="l0000">00h00</th>
+        <td headers="l0000 fbs">Teddy Killerz</td>
+        <td rowspan="2" headers="l0000 l0100 ws">Robert Hood</td>
+        <td headers="l0000 bitds">Kaaris</td>
+        <td rowspan="3" headers="l0000 l0100 l0200 rs">Stand High Patrol</td>
+      </tr>
+      <tr>
+        <th id="l0100">1h00</th>
+        <td headers="l0100 fbs">Ed Rush &amp; Optical</td>
+        <!-- td -->
+        <td headers="l0100 bitds">Dope D.O.D</td>
+        <!-- td -->
+      </tr>
+      <tr>
+        <th id="l0200">02h00</th>
+        <td headers="l0200 fbs">Audio</td>
+        <td rowspan="2" headers="l0200 l0300 ws">Jeff Mills</td>
+        <td headers="l0200 bitds">La Smala</td>
+        <!-- td -->
+      </tr>
+      <tr>
+        <th id="l0300">03h00</th>
+        <td headers="l0300 fbs">The Hard Way (Live)</td>
+        <!-- td -->
+        <td rowspan="2" headers="l0300 l0400 bitds">Al Tarba &amp; Dj Nixon</td>
+        <td rowspan="4" headers="l0300 l0330 l0400 l0500 rs">
+          ReggeaBus &amp; Mad Codiouf
+        </td>
+      </tr>
+      <tr>
+        <th id="l0330">03h30</th>
+        <td headers="l0330 fbs">Mefjus b2b Emperor</td>
+        <td rowspan="3" headers="l0330 l0400 l0500 ws">The Advent (Live)</td>
+        <!-- td -->
+        <!-- td -->
+      </tr>
+      <tr>
+        <th id="l0400">04h00</th>
+        <td rowspan="2" headers="l0400 l0500 fbs">Current Value</td>
+        <!-- td -->
+        <td rowspan="2" headers="l0400 l0500 bitds">Dj Cam</td>
+        <!-- td -->
+      </tr>
+      <tr>
+        <th id="l0500">05h00</th>
+        <!-- td -->
+        <!-- td -->
+        <!-- td -->
+        <!-- td -->
+      </tr>
+    </table>
+  </body>
 </html>
